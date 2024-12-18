@@ -5,3 +5,9 @@
 -- Disable tabs
 vim.opt.showtabline = 0
 vim.g.deprecation_warnings = true
+
+-- Enable spelling by default
+vim.opt.spell = true
+
+-- Enable cursor column highlight
+vim.o.cursorcolumn = true
