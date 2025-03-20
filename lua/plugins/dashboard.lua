@@ -1,3 +1,7 @@
+-- if true then
+--   return {}
+-- end
+
 local headers = {
   [[
 ░▒▓███████▓▒░░▒▓████████▓▒░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓██████████████▓▒░
@@ -77,11 +81,32 @@ local get_random_header = function()
   return random_header
 end
 
+-- return {
+--   {
+--     "nvimdev/dashboard-nvim",
+--     opts = function(_, opts)
+--       opts.config.header = vim.split(get_random_header(), "\n")
+--     end,
+--   },
+-- }
+
 return {
   {
-    "nvimdev/dashboard-nvim",
-    opts = function(_, opts)
-      opts.config.header = vim.split(get_random_header(), "\n")
-    end,
+    "snacks.nvim",
+    opts = {
+      dashboard = {
+        preset = {
+          header = [[
+  #               #   #       #               #       ######## 
+  #        ########## #       #              ########        # 
+##########       ##          #    ######    #    #          #  
+  #     #      ## #         #              #    #         ##   
+  #          ##   #       ##                   #        ## #   
+  #        ##    ##     ##      ##########    #        ##   #  
+   ######         #   ##                     #        #      # 
+]],
+        },
+      },
+    },
   },
 }
