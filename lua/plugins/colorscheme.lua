@@ -3,11 +3,6 @@ return {
     "rose-pine/neovim",
     name = "rose-pine",
     opts = {
-      palette = {
-        main = {
-          base = "#000000",
-        },
-      },
       groups = {
         panel = "base",
       },
