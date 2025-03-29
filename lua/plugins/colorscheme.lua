@@ -3,6 +3,7 @@ return {
     "rose-pine/neovim",
     name = "rose-pine",
     opts = {
+      variant = "auto",
       palette = {
         main = {
           base = "#05070d",
