@@ -8,6 +8,6 @@ return {
     },
     keys = {
       { "<leader>zm", "<cmd>ZenMode<cr>", { silent = true, desc = "Toggle zen mode" } },
-    }
+    },
   },
 }
