@@ -21,7 +21,7 @@ return {
     {
       "<leader>ed",
       function()
-        require("oil").open_float()
+        require("oil").open()
       end,
       desc = "Edit Directory",
     },
