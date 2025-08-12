@@ -4,6 +4,7 @@ return {
     name = "rose-pine",
     opts = {
       variant = "auto",
+      darK_variant = "main",
       palette = {
         main = {
           base = "#05070d",
